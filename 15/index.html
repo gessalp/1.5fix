@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="stylesheets/style.min.css"> -->
+
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="header__title">Ремонт техники различных брендов</h1>
+  </div>
+  <!-- Swiper -->
+  <div class="menu" id="menu">
+    <button class="menu__btn acer">
+      <img class="menu__btn-icon" src="img/acer.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+
+    <button class="menu__btn apple">
+      <img class="menu__btn-icon" src="img/apple.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+
+    <button class="menu__btn bosh">
+      <img class="menu__btn-icon" src="img/bosh.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+
+    <button class="menu__btn hp">
+      <img class="menu__btn-icon" src="img/hp.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+
+    <button class="menu__btn lenovo">
+      <img class="menu__btn-icon" src="img/lenovo.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+    
+    <button class="menu__btn sony">
+      <img class="menu__btn-icon" src="img/sony.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+
+    <button class="menu__btn sonic" id="sonic">
+      <img class="menu__btn-icon" src="img/sonic.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+    
+    <button class="menu__btn samsung" id="samsung">
+      <img class="menu__btn-icon" src="img/sumsung.png" alt="acer">
+      <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+    </button>
+
+  </div>
+  <div class="read__btn">
+  <div style="flex-basis: 100%; height: 0;"></div>
+
+    <div class="menu__readNext">
+      <img class="menu__readNext-icon" src="img/icon.png" id="logo">
+      <button class="menu__readNext-btn" id="btn" onclick="readMore()">Показать все</button>
+  </div>
+</div>
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <button class="menu__btn acer">
+          <img class="menu__btn-icon" src="img/acer.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+  
+      <div class="swiper-slide">
+        <button class="menu__btn apple">
+          <img class="menu__btn-icon" src="img/apple.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+  
+      <div class="swiper-slide">
+        <button class="menu__btn bosh">
+          <img class="menu__btn-icon" src="img/bosh.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+  
+      <div class="swiper-slide">
+        <button class="menu__btn hp">
+          <img class="menu__btn-icon" src="img/hp.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+  
+      <div class="swiper-slide">
+        <button class="menu__btn lenovo">
+          <img class="menu__btn-icon" src="img/lenovo.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+        
+      <div class="swiper-slide">
+        <button class="menu__btn sony">
+          <img class="menu__btn-icon" src="img/sony.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+
+      <div class="swiper-slide">
+        <button class="menu__btn sonic">
+          <img class="menu__btn-icon" src="img/sonic.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+      
+      <div class="swiper-slide">
+        <button class="menu__btn samsung">
+          <img class="menu__btn-icon" src="img/sumsung.png" alt="acer">
+          <img class="menu__btn-button" src="img/go.png" alt="button icon"> 
+        </button>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+<script src="script.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+</body>
+</html>
